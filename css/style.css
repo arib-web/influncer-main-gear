@@ -169,9 +169,7 @@ header .navbar .logo span a {
     color: #a8a4a4;
     margin: 10px 0;
 }
-.item .item-rating {
-    
-}
+
 .item .item-rating i{
     color: #FB8200;
 }
@@ -181,7 +179,4 @@ header .navbar .logo span a {
 }
 .item>span{
     width: 80%;
-}
-.popular-item .see-more{
-
 }
