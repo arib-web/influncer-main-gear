@@ -1,42 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-:root {  
+:root {
     --clr-primary: #000;
     --clr-Secondary: rgba(10, 8, 38, 1);
     --btn-clr: rgba(224, 44, 109, 1);
-    --white:#fff;
+    --white: #fff;
     --font: 'Poppins', sans-serif;
 }
+
 /*====================
 ----Common styles-----
 ====================== */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: var(--font);
 }
-ul, li{
+
+ul,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     padding: 0 220px;
     margin: 0px auto;
 }
-p{
+
+p {
     font-size: 18px;
     font-family: var(--font);
     line-height: 32px;
 }
-img{
+
+img {
     width: 100%;
 }
-.btn{
+
+.btn {
     background-color: var(--btn-clr);
     color: var(--white);
     border: 1px solid transparent;
@@ -44,62 +53,86 @@ img{
     border-radius: 30px;
     font-size: 14px;
 }
+
+section {
+    padding: 90px 0;
+}
+
+
+
+.section-title h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 /*====================
 ----Main styles-----
 ====================== */
 /* ==================================
 ---Header Section Start From Here----
 ===================================== */
-header{
+header {
     height: 750px;
 }
-header .navbar{
+
+header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px 0;
 }
-header .navbar .logo span a{
+
+header .navbar .logo span a {
     font-size: 22px;
     color: var(--clr-primary);
     font-weight: 700;
 }
-.navbar .menu ul{
+
+.navbar .menu ul {
     display: flex;
 }
-.navbar .menu ul li a{
+
+.navbar .menu ul li a {
     margin-right: 30px;
     font-size: 16px;
     color: var(--clr-primary);
 }
-.header-banner{
+
+.header-banner {
     display: flex;
     align-items: center;
     column-gap: 110px;
     padding: 40px 0 0px 0px;
 }
-.header-banner .banner-text{
+
+.header-banner .banner-text {
     width: 50%;
 }
-.header-banner .banner-text h2{
+
+.header-banner .banner-text h2 {
     font-size: 50px;
     line-height: 70px;
 }
-.header-banner .banner-text p{
+
+.header-banner .banner-text p {
     margin: 15px 0;
 }
-.header-banner .banner-text a button i{
+
+.header-banner .banner-text a button i {
     margin: 0 0px 0px 5px;
 }
-.header-banner .banner-image{
+
+.header-banner .banner-image {
     width: 40%;
     background: url(../images/Circle\ design.svg) no-repeat center;
     background-size: cover;
 }
+
 /* ==================================
     ---Header Section End Here----
 ===================================== */
-.image-slider{
+.image-slider {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,6 +140,48 @@ header .navbar .logo span a{
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
-.image-slider img{
+
+.image-slider img {
     width: 10%;
+}
+
+/* ==================================
+    ---Image Slider Section End Here----
+===================================== */
+.popular-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.item {
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+}
+.item h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.item p{
+    font-size: 22px;
+    color: #a8a4a4;
+    margin: 10px 0;
+}
+.item .item-rating {
+    
+}
+.item .item-rating i{
+    color: #FB8200;
+}
+.item .item-rating>span ,.item span{
+    color: #a8a4a4;
+    font-size: 13px;
+}
+.item>span{
+    width: 80%;
+}
+.popular-item .see-more{
+
 }
